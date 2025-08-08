@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akash's personal portfolio showcasing projects, skills, and contact." />
+  <title>Akash | Software Developer</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- tsParticles scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-stars@3/tsparticles.preset.stars.bundle.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      (async () => {
+        await loadStarsPreset(tsParticles);
+        await tsParticles.load({
+          id: "tsparticles",
+          options: {
+            preset: "stars",
+            fullScreen: { enable: false },
+            background: { color: "#000000" },
+            particles: {
+                color: { value: "#ffffff" },
+                links: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: .25,
+                    direction: "none",
+                    outModes: { default: "out" }
+                },
+                number: {
+                    value: 500,
+                    density: { enable: true, area: 800 }
+                },
+                size: {
+                    value: { min: 1, max: 2.25 }
+                },
+                color: { value: ["#ffffff", "#88ccff", "#c2afff"] },
+                shadow: {
+                  enable: true,
+                  color: "#88ccff",
+                  blur: 10
+                }
+                }
+          }
+        });
+      })();
+    });
+  </script>
+  <style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000 !important;
+    color: #fff;
+    font-family: sans-serif;
+    color-scheme: light !important; /* Prevent dark mode extensions */
+
+    canvas#tsparticles {
+    background: transparent !important;
+    isolation: isolate;
+    color-scheme: light !important;
+    z-index: -1;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #site-wrapper {
+    isolation: isolate;
+    position: relative;
+    z-index: 0;
+  }
+
+  #tsparticles {
+    transition: transform 0.3s linear;
+  }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .hero-title {
+  text-shadow:
+    0 0 6px rgba(0, 153, 255, 0.6),
+    0 0 10px rgba(0, 153, 255, 0.5),
+    0 0 14px rgba(0, 153, 255, 0.4);
+  }
+
+  .typed-glow {
+    color:#ffffff;
+    text-shadow:
+      0 0 10px #8be9fd,
+      0 0 15px #bd93f9;
+    animation: pulseGlow 1s infinite ease-in-out;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+    text-shadow:
+      0 0 10px #8be9fd,
+      0 0 15px #bd93f9;
+  }
+  50% {
+    text-shadow:
+      0 0 2px #8be9fd,
+      0 0 4px #bd93f9;
+  }
+  }
+
+  </style>
+
+</head>
+
+<body class="relative">
+  <div id="site-wrapper">
+  <!-- tsParticles background -->
+  <div id="tsparticles" class="fixed top-0 left-0 w-full h-full z-[-1] pointer-events-none"></div>
+
+  <!-- Navbar -->
+  <div class="relative z-10">
+  <header class="relative shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="hero-title text-xl font-bold">Empyrean Sky</h1>
+      <nav class="space-x-4">
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#about" class="hover:text-blue-600">About Me</a>
+        <a href="#contact" class="hover:text-blue-600">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center px-4" id="home">
+  <div class="mt-24">
+    <h2 class="hero-title text-4xl md:text-6xl font-bold mb-4 text-white">
+      Hi, I'm Akash! 👋
+    </h2>
+    <div class="typed-glow h-10 md:h-12 flex items-center justify-center text-lg md:text-2xl text-blue-300 font-mono">
+      <span id="typed"></span>
+    </div>
+    <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">View My Work</a>
+  </div>
+</section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-relative">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-10">Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card --> 
+        <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
+          <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
+            <img src="https://img.itch.zone/aW1nLzYxMDM1NjUucG5n/315x250%23c/yuPawn.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-xl font-bold mb-2">Seventino Midnight Café</h4>
+            <p class="text-gray-300 mb-4">A cooking game that involves hunting ingredients and using them in your recipes.</p>
+            <a href="https://nekothewolf.itch.io/seventino-midnight-cafe" class="text-blue-300 font-medium hover:underline">View Project →</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
+            <img src="https://img.itch.zone/aW1nLzM1NzIwOTIucG5n/315x250%23c/lMb3Yg.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-xl font-bold mb-2">Darkworld's Descent</h4>
+            <p class="text-gray-300 mb-4">A rogue-like dungeon crawler with real-time combat inspired by Action-RPGs.</p>
+            <a href="https://thomasapplewhite.itch.io/darkworld-descent" class="text-blue-300 font-medium hover:underline">View Project →</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
+            <img src="https://img.itch.zone/aW1nLzQ5Mjc0MDkucG5n/315x250%23c/5W7jtu.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-xl font-bold mb-2">Dimension Warp</h4>
+            <p class="text-gray-300 mb-4">A free-for-all brawl card game for up to 4 players, taking place in two dimensions simultaneously.</p>
+            <a href="https://empyreansky.itch.io/dimension-warp" class="text-blue-300 font-medium hover:underline">View Project →</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
+            <img src="https://img.itch.zone/aW1nLzMzNDg0MTMucG5n/315x250%23c/AFIr4J.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-xl font-bold mb-2">Elevator Pitch</h4>
+            <p class="text-gray-300 mb-4">Elevator Pitch is a fast-paced, 4-player co-op game in which coworkers compete to become CEO of the company.</p>
+            <a href="https://elevator-pitch-gda.itch.io/elevator-pitch-gda" class="text-blue-300 font-medium hover:underline">View Project →</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
+            <img src="https://img.itch.zone/aW1nLzQ2OTQ4NzYucG5n/315x250%23c/Q5%2BkNJ.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="text-xl font-bold mb-2">Mayhem at the Mansion</h4>
+            <p class="text-gray-300 mb-4">A free-for-all brawl card game for up to 4 players, taking place in two dimensions simultaneously.</p>
+            <a href="https://empyreansky.itch.io/mayhem-at-the-mansion" class="text-blue-300 font-medium hover:underline">View Project →</a>
+          </div>
+        </div>
+        <!-- Duplicate project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-relative">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+      <p class="text-gray-300">I am a Software Developer specializing in game design, with experience designing scalable backend systems and solutions. 
+        Proven ability to collaborate in agile environments and deliver robust applications using C#, Python, and C++. 
+        Experienced in debugging complex software issues, and optimizing operational efficiency. 
+        Strong communicator and problem-solver with a drive for innovation and excellent quality.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-relative">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-6 text-white">Contact Me</h3>
+
+      <div class="space-y-6 text-lg text-gray-300">
+        <!-- Email -->
+        <div class="flex items-center justify-center gap-3">
+          <!-- Envelope Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.94 4.94A2 2 0 014.34 4h11.32a2 2 0 011.4.94L10 10.586 2.94 4.94zM18 6.08v9.84A2.08 2.08 0 0115.92 18H4.08A2.08 2.08 0 012 15.92V6.08l8 5.66 8-5.66z"/>
+          </svg>
+          <a href="mailto:your.email@example.com" class="hover:text-blue-300 transition-colors">akashdkapadia@gmail.com</a>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center justify-center gap-3">
+          <!-- Telephone Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884a1.5 1.5 0 01.355-1.634l2.13-2.13a1.5 1.5 0 012.13 0l1.58 1.58a1.5 1.5 0 010 2.12l-.716.716a11.042 11.042 0 004.95 4.95l.716-.716a1.5 1.5 0 012.12 0l1.58 1.58a1.5 1.5 0 010 2.13l-2.13 2.13a1.5 1.5 0 01-1.635.355c-1.713-.68-3.348-1.794-4.878-3.323-1.53-1.53-2.644-3.165-3.324-4.878z"/>
+          </svg>
+          <a href="tel:+1234567890" class="hover:text-blue-300 transition-colors">+1 (562) 387-6725</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-300">
+    © 2025 Akash D. Kapadia. All rights reserved.
+  </footer>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  </div> 
+
+  <!-- tsParticles config -->
+  <style>
+  #tsparticles {
+    height: 300vh; /* Taller than screen */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    transition: transform 0.3s linear;
+  }
+</style>
+<script>
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    // Adjust the multiplier for more/less movement
+    document.getElementById('tsparticles').style.transform = `translateY(${scrollY * -0.04}px)`;
+  });
+</script>
+
+<script>
+  const navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("bg-black/70", window.scrollY > 10);
+  });
+
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+    menu.classList.toggle("flex-col");
+    menu.classList.toggle("absolute");
+    menu.classList.toggle("top-full");
+    menu.classList.toggle("right-4");
+    menu.classList.toggle("bg-black/90");
+    menu.classList.toggle("p-4");
+    menu.classList.toggle("rounded-md");
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  const typed = new Typed("#typed", {
+    strings: [
+      'Software Developer',
+      'Game Designer'
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true,
+    showCursor: false,
+    cursorChar: '|',
+    contentType: 'html', // Important!
+  });
+</script>
+
+
+</div>
+</body>
+</html>
