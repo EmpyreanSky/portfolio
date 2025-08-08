@@ -35,12 +35,12 @@
                 },
                 move: {
                     enable: true,
-                    speed: .25,
+                    speed: .15,
                     direction: "none",
                     outModes: { default: "out" }
                 },
                 number: {
-                    value: 500,
+                    value: 550,
                     density: { enable: true, area: 800 }
                 },
                 size: {
@@ -135,14 +135,12 @@
   <!-- Navbar -->
   <div class="relative z-10">
   <header class="relative shadow-md fixed w-full z-10">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="hero-title text-xl font-bold">Empyrean Sky</h1>
-      <nav class="space-x-4">
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#about" class="hover:text-blue-600">About Me</a>
-        <a href="#contact" class="hover:text-blue-600">Contact Me</a>
-      </nav>
-    </div>
+    <nav class="flex justify-end items-center p-4 pr-10">
+      <div class="space-x-4 text-lg font-semibold">
+        <a href="#about" class="hero-title hover:text-blue-300">About Me</a>
+        <a href="#contact" class="hero-title hover:text-blue-300">Contact Me</a>
+      </div>
+    </nav>
   </header>
 
   <!-- Hero Section -->
@@ -154,20 +152,20 @@
     <div class="typed-glow h-10 md:h-12 flex items-center justify-center text-lg md:text-2xl text-blue-300 font-mono">
       <span id="typed"></span>
     </div>
-    <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">View My Work</a>
+    <a href="#projects" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition">View My Work</a>
   </div>
 </section>
 
   <!-- Projects Section -->
   <section id="projects" class="py-20 bg-relative">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-10">Projects</h3>
+      <h3 class="hero-title text-3xl font-semibold mb-10">Projects</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project Card --> 
         <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
           <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
             <img src="https://img.itch.zone/aW1nLzYxMDM1NjUucG5n/315x250%23c/yuPawn.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
-            <h4 class="text-xl font-bold mb-2">Seventino Midnight Café</h4>
+            <h4 class="hero-title text-xl font-bold mb-2">Seventino Midnight Café</h4>
             <p class="text-gray-300 mb-4">A cooking game that involves hunting ingredients and using them in your recipes.</p>
             <a href="https://nekothewolf.itch.io/seventino-midnight-cafe" class="text-blue-300 font-medium hover:underline">View Project →</a>
           </div>
@@ -176,7 +174,7 @@
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
             <img src="https://img.itch.zone/aW1nLzM1NzIwOTIucG5n/315x250%23c/lMb3Yg.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
-            <h4 class="text-xl font-bold mb-2">Darkworld's Descent</h4>
+            <h4 class="hero-title text-xl font-bold mb-2">Darkworld's Descent</h4>
             <p class="text-gray-300 mb-4">A rogue-like dungeon crawler with real-time combat inspired by Action-RPGs.</p>
             <a href="https://thomasapplewhite.itch.io/darkworld-descent" class="text-blue-300 font-medium hover:underline">View Project →</a>
           </div>
@@ -185,7 +183,7 @@
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
             <img src="https://img.itch.zone/aW1nLzQ5Mjc0MDkucG5n/315x250%23c/5W7jtu.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
-            <h4 class="text-xl font-bold mb-2">Dimension Warp</h4>
+            <h4 class="hero-title text-xl font-bold mb-2">Dimension Warp</h4>
             <p class="text-gray-300 mb-4">A free-for-all brawl card game for up to 4 players, taking place in two dimensions simultaneously.</p>
             <a href="https://empyreansky.itch.io/dimension-warp" class="text-blue-300 font-medium hover:underline">View Project →</a>
           </div>
@@ -194,7 +192,7 @@
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
             <img src="https://img.itch.zone/aW1nLzMzNDg0MTMucG5n/315x250%23c/AFIr4J.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
-            <h4 class="text-xl font-bold mb-2">Elevator Pitch</h4>
+            <h4 class="hero-title text-xl font-bold mb-2">Elevator Pitch</h4>
             <p class="text-gray-300 mb-4">Elevator Pitch is a fast-paced, 4-player co-op game in which coworkers compete to become CEO of the company.</p>
             <a href="https://elevator-pitch-gda.itch.io/elevator-pitch-gda" class="text-blue-300 font-medium hover:underline">View Project →</a>
           </div>
@@ -203,8 +201,8 @@
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <div class="bg-relative p-6 rounded-xl shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl will-change-transform">
             <img src="https://img.itch.zone/aW1nLzQ2OTQ4NzYucG5n/315x250%23c/Q5%2BkNJ.png" alt="Screenshot of Project 1" class="w-full h-48 object-cover rounded-lg mb-4" />
-            <h4 class="text-xl font-bold mb-2">Mayhem at the Mansion</h4>
-            <p class="text-gray-300 mb-4">A free-for-all brawl card game for up to 4 players, taking place in two dimensions simultaneously.</p>
+            <h4 class="hero-title text-xl font-bold mb-2">Mayhem at the Mansion</h4>
+            <p class="text-gray-300 mb-4">A heist game where you must infiltrate a heavily fortified mansion to retrieve a prized artifact.</p>
             <a href="https://empyreansky.itch.io/mayhem-at-the-mansion" class="text-blue-300 font-medium hover:underline">View Project →</a>
           </div>
         </div>
@@ -216,7 +214,7 @@
   <!-- About Section -->
   <section id="about" class="py-20 bg-relative">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+      <h3 class="hero-title text-3xl font-semibold mb-6">About Me</h3>
       <p class="text-gray-300">I am a Software Developer specializing in game design, with experience designing scalable backend systems and solutions. 
         Proven ability to collaborate in agile environments and deliver robust applications using C#, Python, and C++. 
         Experienced in debugging complex software issues, and optimizing operational efficiency. 
@@ -227,7 +225,7 @@
   <!-- Contact Section -->
   <section id="contact" class="py-20 bg-relative">
     <div class="max-w-2xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-6 text-white">Contact Me</h3>
+      <h3 class="hero-title text-3xl font-semibold mb-6 text-white">Contact Me</h3>
 
       <div class="space-y-6 text-lg text-gray-300">
         <!-- Email -->
